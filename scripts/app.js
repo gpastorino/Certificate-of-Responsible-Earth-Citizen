@@ -6,7 +6,24 @@ $('button').on('click', ()=>{
     console.log('Game Start')
 });  //this codes the button
 
+$('button').on('click', ()=>{
 
+    console.log('Game Start')   //create a function that will call the event listner.
+    createSquares(25);  //we added this after creating the function.  
+    });
+    
+
+    const createSquares = numberOfSquares =>    //numberOfSquares is the parameter. 
+    {
+    const $squares = $('.squares');
+    for (let i = 1; i < numberOfSquares; i++) {
+        
+    
+        const $square = $('<div class="square" />')
+    
+        $squares.append($square);
+    }
+}    
 
 // == User Stories/game logic == //
 

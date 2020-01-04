@@ -1,0 +1,48 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .squares div {
+    width:  5vh;
+    height: 5vh;
+    margin-right: 1%;
+    display: inline-block;
+    background-color: blue;
+  }
+
+  h2 {
+      width: 100px;
+      height: 100px;
+      background-color: gold;
+      /* this is going to be the object to introduce with javascript from the top of the page */
+        /* also, need to have this object drift, and clickable/dragable */
+    }
+
+    /* h3 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    } */
+  
+  header {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background-color: pink;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+  }
+  
+  button {
+    float: right;
+    margin-right: 50%;
+  }
+
+  footer {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* look up the dimensional effect that will place each collector at the bottom of the page */
+
+    
+  }
