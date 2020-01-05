@@ -95,7 +95,14 @@ https://stackoverflow.com/questions/19954667/jquery-animating-object-to-look-lik
 Animated object moving diagonally on the page:
 https://www.w3schools.com/howto/howto_js_animate.asp
 
+Recycling resources:
+https://blog.nationalgeographic.org/2018/04/04/7-things-you-didnt-know-about-plastic-and-recycling/
 
+https://apps.npr.org/plastics-recycling/
+
+https://earth911.com/
+
+https://livegreen.recyclebank.com/column/because-you-asked/what-should-i-do-with-my-chipped-dishes-and-bowls
 
 Minimum Viable Product (MVP):
 

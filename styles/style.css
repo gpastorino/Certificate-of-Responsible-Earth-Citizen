@@ -1,21 +1,32 @@
 html, body {
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(245, 245, 129);
+    /* display: flex; */
+    flex-direction: column;
+    min-height: 50%;
   }
-  .squares div {
+
+  header{
+    color: green;
+    background-color: white;
+    width: 40%;
+
+  }
+  /* .squares div {
     width:  5vh;
     height: 5vh;
     margin-right: 1%;
     display: inline-block;
     background-color: blue;
-  }
+  } */
 
-  h2 {
+  /* h2 {
       width: 100px;
       height: 100px;
-      background-color: gold;
+      background-color: gold; */
       /* this is going to be the object to introduce with javascript from the top of the page */
         /* also, need to have this object drift, and clickable/dragable */
-    }
+    /* } */
 
     /* h3 {
         width: 100px;
@@ -23,7 +34,7 @@ html, body {
         background-color: green;
     } */
   
-  header {
+  /* header {
     width: 100%;
     display: block;
     height: 100px;
@@ -32,17 +43,89 @@ html, body {
     padding-bottom: 1%;
     padding-left: 1.5%;
   }
-  
-  button {
+   */
+  /* button {
     float: right;
     margin-right: 50%;
-  }
+  } */
 
   footer {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    /* look up the dimensional effect that will place each collector at the bottom of the page */
 
-    
+    margin: 0% ;
+  
+    width: auto;
+    height: 50px;
+    /* height: 50%; */
+    background-color: green;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    margin-top: 90%;
+
+
+    /* look up the dimensional effect that will place each collector at the bottom of the page */
   }
+
+
+
+
+
+  .round1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    /* margin: 4px 200px; */
+    cursor: pointer;
+    border-radius: 50%;
+    height: 110px;
+    /* position: relative; */
+  }
+  .round2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 40px 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 150px;
+    /* position: relative; */
+  }
+
+  .round3 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 40px 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 150px;
+    /* position: relative; */
+
+  }
+/* button {
+
+  border-radius: 50%;
+  height: 110px; */
+}
+    /* footer {
+    position: fixed;
+    margin-top: 2%;
+    height: 50 width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    bottom: 0; */
