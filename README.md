@@ -45,10 +45,9 @@ Monday:
 - Example of falling objects continued.   
     - This entails multiple classes, with starting at the top of the screen, to falling to the bottom of the screen.  
     - Movement speed
+
 Tuesday: 
 - Example of falling objects (continued).   
-    - This entails multiple classes, with starting at the top of the screen, to falling to the bottom of the screen.  
-    - Movement speed
 - Tutorial with dragging and dropping to symbol, and completion success. 
 - Timer and score start upon tapping the play button.  
 - User can drag and drop items into a bin with score reading. 
