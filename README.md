@@ -1,4 +1,5 @@
 
+<!-- ============================================================================ -->
 
 Plastics Recycling Program/Game:
 
@@ -34,6 +35,7 @@ Note: Instructions listed: Trash piece key
 Pre-planning:
 how to make an object drift down a page javascript
 
+<!-- ============================================================================ -->
 
 Milestones: 
 
@@ -64,44 +66,7 @@ Thursday:
 - Final touch ups to movements of designs, and UI adjustments. 
 - Finalize designs.  
 
-
-
-Resources: 
-
-https://www.google.com/search?q=recycling+plastic+symbols&sxsrf=ACYBGNRkSMua8wd8IzDyAR-NfVC_u0WmqQ:1578094606700&tbm=isch&source=iu&ictx=1&fir=ER3EfYj3m6THMM%253A%252CUmJfnqdjSBPjjM%252C_&vet=1&usg=AI4_-kS88CBRlfgWO14rJ6y-UJhGE9z-7w&sa=X&ved=2ahUKEwiy8dDDzOjmAhXOvp4KHdceAe8Q9QEwAHoECAIQAw#imgrc=P1EnsdurBO3GpM:&vet=1
-
-https://www.dummies.com/programming/programming-games/how-to-add-drift-effects-to-your-html5-game/
-
-https://www.greenlivingtips.com/articles/recycling-by-the-numbers.html
-
-
-Drag and drop:
-https://www.w3schools.com/html/html5_draganddrop.asp
-
-Timer:
-https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript
-
-Movement of an object in Jquery:
-https://www.google.com/search?sxsrf=ACYBGNQqUvTp7CE-e6X-46SY-SXZwQ7k8g%3A1578095952017&ei=UNUPXsZUg_j6BK_qp7gD&q=drift+animation+using+jquery+&oq=drift+animation+using+jquery+&gs_l=psy-ab.3..33i22i29i30l2.15850.21920..22771...3.1..0.148.2914.26j6......0....1..gws-wiz.......0i71j35i39j0i67j0i273j0j0i131j0i22i30j0i10j0i22i10i30j33i160j33i299.8w2L8GG18TA&ved=0ahUKEwjGvJDF0ejmAhUDvJ4KHS_1CTcQ4dUDCAs&uact=5
-
-http://jsfiddle.net/Xw29r/
-
-http://jsfiddle.net/Xw29r/15/
-
-Animation floating in water:
-https://stackoverflow.com/questions/19954667/jquery-animating-object-to-look-like-its-floating-in-water
-
-Animated object moving diagonally on the page:
-https://www.w3schools.com/howto/howto_js_animate.asp
-
-Recycling resources:
-https://blog.nationalgeographic.org/2018/04/04/7-things-you-didnt-know-about-plastic-and-recycling/
-
-https://apps.npr.org/plastics-recycling/
-
-https://earth911.com/
-
-https://livegreen.recyclebank.com/column/because-you-asked/what-should-i-do-with-my-chipped-dishes-and-bowls
+<!-- ============================================================================ -->
 
 Minimum Viable Product (MVP):
 
@@ -115,10 +80,81 @@ certificate given if score is above >=90%.
 Game over if mis-sorted plastics.  
 Play again, if user doesn’t get >=90%. 
 
+<!-- ============================================================================ -->
+
+
 Stretch Goals:
-Animations
-Sounds
-Great designs
+
+-Animations 
+    - Will occur when the user places an item into a container.  
+    - When user hits on a button.
+-Sounds
+    - when a button is clicked on.
+    - when an item is grabbed.
+    - when an item is dropped.
+-Great designs
+    - integrating images into the game.
+-Use more features:
+    -dropdown for menu.
+    
+
+<!-- ============================================================================ -->
+
+
+Resources: 
+
+drift effect: 
+https://www.dummies.com/programming/programming-games/how-to-add-drift-effects-to-your-html5-game/
+
+Drag and drop:
+https://www.w3schools.com/html/html5_draganddrop.asp
+
+Timer:
+https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript
+
+Movement of an object in Jquery:
+https://www.google.com/search?sxsrf=ACYBGNQqUvTp7CE-e6X-46SY-SXZwQ7k8g%3A1578095952017&ei=UNUPXsZUg_j6BK_qp7gD&q=drift+animation+using+jquery+&oq=drift+animation+using+jquery+&gs_l=psy-ab.3..33i22i29i30l2.15850.21920..22771...3.1..0.148.2914.26j6......0....1..gws-wiz.......0i71j35i39j0i67j0i273j0j0i131j0i22i30j0i10j0i22i10i30j33i160j33i299.8w2L8GG18TA&ved=0ahUKEwjGvJDF0ejmAhUDvJ4KHS_1CTcQ4dUDCAs&uact=5
+
+Dragging an object:  
+https://www.w3schools.com/howto/howto_js_draggable.asp
+
+Dragging and placing an object into another place:
+https://codepen.io/PJCHENder/pen/VzBVoV/
+
+for tutorial: (with caption)
+https://getbootstrap.com/docs/3.4/javascript/#carousel
+- can add sound effect with switch of each page.  
+
+<!-- Animations:  -->
+
+Animation floating in water:
+https://stackoverflow.com/questions/19954667/jquery-animating-object-to-look-like-its-floating-in-water
+
+Animated object moving diagonally on the page:
+https://www.w3schools.com/howto/howto_js_animate.asp
+
+movement of objects around the screen:  
+http://jsfiddle.net/Xw29r/15/
+
+Fast moving object on screen:  
+http://jsfiddle.net/Xw29r/
+
+<!-- ============================================================================ -->
+
+
+Recycling resources:
+https://blog.nationalgeographic.org/2018/04/04/7-things-you-didnt-know-about-plastic-and-recycling/
+
+https://apps.npr.org/plastics-recycling/
+
+https://earth911.com/
+
+https://livegreen.recyclebank.com/column/because-you-asked/what-should-i-do-with-my-chipped-dishes-and-bowls
+
+https://www.google.com/search?q=recycling+plastic+symbols&sxsrf=ACYBGNRkSMua8wd8IzDyAR-NfVC_u0WmqQ:1578094606700&tbm=isch&source=iu&ictx=1&fir=ER3EfYj3m6THMM%253A%252CUmJfnqdjSBPjjM%252C_&vet=1&usg=AI4_-kS88CBRlfgWO14rJ6y-UJhGE9z-7w&sa=X&ved=2ahUKEwiy8dDDzOjmAhXOvp4KHdceAe8Q9QEwAHoECAIQAw#imgrc=P1EnsdurBO3GpM:&vet=1
+
+
+https://www.greenlivingtips.com/articles/recycling-by-the-numbers.html
 
 
 
