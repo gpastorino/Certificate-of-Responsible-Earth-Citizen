@@ -3,51 +3,62 @@ html, body {
     background-color: rgb(245, 245, 129);
     /* display: flex; */
     flex-direction: column;
-    min-height: 50%;
+    /* min-height: 50%; */
   }
 
   header{
     color: green;
-    background-color: white;
-    width: 40%;
-
-  }
-  /* .squares div {
-    width:  5vh;
-    height: 5vh;
-    margin-right: 1%;
-    display: inline-block;
-    background-color: blue;
-  } */
-
-  /* h2 {
-      width: 100px;
-      height: 100px;
-      background-color: gold; */
-      /* this is going to be the object to introduce with javascript from the top of the page */
-        /* also, need to have this object drift, and clickable/dragable */
-    /* } */
-
-    /* h3 {
-        width: 100px;
-        height: 100px;
-        background-color: green;
-    } */
-  
-  /* header {
+    background-color:white;
     width: 100%;
-    display: block;
-    height: 100px;
-    background-color: pink;
-    margin-bottom: 1%;
-    padding-bottom: 1%;
-    padding-left: 1.5%;
+    font-size: 50px;
+    position: sticky;
+    padding: 0 0 0 25%;
+ 
   }
-   */
-  /* button {
-    float: right;
-    margin-right: 50%;
-  } */
+
+  h3 {
+    background-color:green;
+    color: white;
+    width: 50%;
+    border-radius: 10%;
+
+  }
+
+  .statsbox {
+    width: 20%;
+    background-color: white;
+    border-radius: 10%;
+  }
+  .compost {
+    width:  15vh;
+    height: 15vh;
+    margin-right: 5%;
+    margin-left: 25%;
+    display: inline-block;
+    background-color: rgb(65, 102, 9);
+  }
+  .grocery {
+    width:  15vh;
+    height: 15vh;
+    margin-right: 5%;
+    display: inline-block;
+    background-color: rgb(224, 109, 109);
+  }
+  .askcity {
+    width:  15vh;
+    height: 15vh;
+    margin-right: 5%;
+    display: inline-block;
+    background-color: rgb(40, 220, 233);
+  }
+  .local {
+    width:  15vh;
+    height: 15vh;
+    margin-right: 5%;
+    display: inline-block;
+    background-color: rgb(19, 241, 19);
+  }
+
 
   footer {
 
@@ -60,14 +71,16 @@ html, body {
     color: white;
     padding: 20px;
     bottom: 0;
-    margin-top: 90%;
-
-
+    /* margin-top: 10%; */
     /* look up the dimensional effect that will place each collector at the bottom of the page */
   }
 
 
+  .recyclecontainers {
+    ;
 
+
+  }
 
 
   .round1 {
@@ -94,10 +107,10 @@ html, body {
     text-decoration: none;
     display: flex;
     font-size: 16px;
-    margin: 40px 50%;
+    margin: 40px 40%;
     cursor: pointer;
     border-radius: 50%;
-    height: 150px;
+    height: 190px;
     /* position: relative; */
   }
 
@@ -117,15 +130,3 @@ html, body {
     /* position: relative; */
 
   }
-/* button {
-
-  border-radius: 50%;
-  height: 110px; */
-}
-    /* footer {
-    position: fixed;
-    margin-top: 2%;
-    height: 50 width: 100%;
-    text-align: center;
-    font-size: 0.8em;
-    bottom: 0; */
