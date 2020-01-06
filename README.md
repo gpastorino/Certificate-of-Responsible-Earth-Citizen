@@ -96,7 +96,7 @@ Stretch Goals:
     - integrating images into the game.
 -Use more features:
     -dropdown for menu.
-    
+
 
 <!-- ============================================================================ -->
 
@@ -124,6 +124,24 @@ https://codepen.io/PJCHENder/pen/VzBVoV/
 for tutorial: (with caption)
 https://getbootstrap.com/docs/3.4/javascript/#carousel
 - can add sound effect with switch of each page.  
+
+Drop-down menu:
+https://getbootstrap.com/docs/3.4/javascript/#dropdowns
+
+use live demo for the certificate:
+https://getbootstrap.com/docs/3.4/javascript/#dropdowns
+
+drag an object- jquery:
+https://jqueryui.com/draggable/
+
+draggable event, and adding effect to drop:
+https://www.elated.com/drag-and-drop-with-jquery-your-essential-guide/
+
+moving items into a div:
+(move the users name into the certificate):
+https://www.w3resource.com/jquery-exercises/part1/jquery-practical-exercise-12.php
+
+
 
 <!-- Animations:  -->
 
