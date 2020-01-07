@@ -1,18 +1,78 @@
+
+
+.grocerystore-item {
+  width:  100px;
+  height: 100px;
+  margin:  90px 0 0 30%;
+  background-color: rgb(230, 142, 142);
+  position: fixed;
+  top: 0;
+
+
+}
+
+.compost-item {
+  width:  100px;
+  height: 100px;
+  margin:  90px 0 0 40%;
+  background-color: rgb(244, 12, 12);
+  position: fixed;
+  top: 0;
+
+}
+.askcity-item {
+  width:  100px;
+  height: 100px;
+  margin:  90px 0 0 50%;
+  background-color: rgb(85, 195, 235);
+  position: fixed;
+  top: 0;
+
+}
+
+.local-recycle-item {
+  width:  100px;
+  height: 100px;
+  margin:  90px 0 0 60%;
+  background-color: rgb(30, 235, 23);
+  position: fixed;
+  top: 0;
+
+}
+
+.items {
+  /* background-color: red; */
+  width: 1000px;
+  height: 100px;
+  position: fixed;
+  margin: 90px 0 0 20%;
+
+}
+
+
+/* <div class="compost-item"></div>
+<div class="grocerystore-item"></div>
+<div class="askcity-item"></div>
+<div class="local-recycle-item"></div> */
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(245, 245, 129);
     /* display: flex; */
     flex-direction: column;
     /* min-height: 50%; */
+    position:relative;
   }
 
-  header{
+  header {
     color: green;
     background-color:white;
     width: auto;
     font-size: 50px;
     position: sticky;
     padding: 0 0 0 25%;
+    position:relative;
+    z-index: 0
   }
 
   h3 {
@@ -20,6 +80,7 @@ html, body {
     color: white;
     width: 50%;
     border-radius: 10%;
+    position:relative;
 
   }
 
@@ -27,6 +88,7 @@ html, body {
     width: 20%;
     background-color: white;
     border-radius: 10%;
+    position:relative;
   }
   .compost {
     width:  15vh;
@@ -35,6 +97,7 @@ html, body {
     margin-left: 25%;
     display: inline-block;
     background-color: rgb(65, 102, 9);
+    position:relative;
     
   }
   .grocery {
@@ -43,6 +106,7 @@ html, body {
     margin-right: 5%;
     display: inline-block;
     background-color: rgb(224, 109, 109);
+    position:relative;
    
   }
   .askcity {
@@ -51,6 +115,7 @@ html, body {
     margin-right: 5%;
     display: inline-block;
     background-color: rgb(40, 220, 233);
+    position:relative;
  
   }
   .local {
@@ -59,6 +124,7 @@ html, body {
     margin-right: 5%;
     display: inline-block;
     background-color: rgb(19, 241, 19);
+    position:relative;
  
   }
 
@@ -74,6 +140,7 @@ html, body {
     color: white;
     padding: 20px;
     bottom: 0;
+    position:relative;
     /* margin-top: 10%; */
     /* look up the dimensional effect that will place each collector at the bottom of the page */
   }
@@ -81,6 +148,7 @@ html, body {
 
   .recyclecontainers {
     flex-wrap: nowrap;
+    position:relative;
     /* background-color: blue; */
 /* why doesn't flex wrap function work here?   */
   }
@@ -115,6 +183,7 @@ html, body {
     border-radius: 50%;
     height: 190px;
     /* position: relative; */
+    position:relative;
   }
 
   /* .round3 {
@@ -132,4 +201,6 @@ html, body {
     height: 150px;
     /* position: relative; */
 
-  } */
+  /* }  */
+
+

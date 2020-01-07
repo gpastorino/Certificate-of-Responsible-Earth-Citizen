@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html>
+
+
+
+  <!-- <div class="compost-item"></div> -->
+  <!-- <div class="grocerystore-item"></div>
+  <div class="askcity-item"></div>
+  <div class="local-recycle-item"></div> -->
+
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> -->
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-
   <header>
     Certificate of Responsible Earth Citizen
   </header>
+  <div class="items">
+  <!-- <div class="compost-item"></div>
+  <div class="grocerystore-item"></div>
+  <div class="askcity-item"></div>
+  <div class="local-recycle-item"></div> -->
+  </div>
+  
+
+
 
     <div class="statsbox">
-      <h1>Total Score (out of 200): mo
+      <h1>Total Score (out of 40): 
         <div class="score">0</div>
       </h1>
 
-      <h3>Timer (30 seconds):
-      <div class="timer">30</div>
-      </h3>
-      
-      </div>
+      <h2>Timer (30 seconds):
+      <!--changed from  <div class="timer">30</div> -->
+      <span id="timer">timer: 30s</span>
+      </h2>
+    </div>
+    <!-- $('#timer').text(`timer: ${time}s`); -->
+    
 
 
+  <!-- <button>Tutorial</button> -->
 
-  <button>Tutorial</button>
+ <a href="page2.html"><button>Important resources</button></a>
+ <a href="page3.html"><button>Tutorial</button></a>
+  <!-- <button class="round2">Begin  Certification</button> -->
+  <!-- <button class="round2" onclick="style.display = 'none'">Begin  Certification</button> -->
+  <button class="round2" onclick="style.visibility = 'hidden'">Begin  Certification</button>
 
-
-  <!-- I can't get the link to connect to the next page for me to make a second page of html.  -->
-  <form action="/index2.html">
-    <button type="submit">Important Resources</button>
- </form>
-  <!-- <button onclick ="/htmlpages/index2.html">Important Resources</button> -->
-
-
-  <button class="round2">Begin  Certification</button>
-
+<!-- button.style.visibility = "hidden"; -->
 
   <div class="recyclecontainers">
     <div class="compost">Compost</div>

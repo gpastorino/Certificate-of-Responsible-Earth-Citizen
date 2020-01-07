@@ -72,9 +72,13 @@ Minimum Viable Product (MVP):
 
 Play button starts play
 Timer starts and plastics start falling from the top of the screen
-Player drags pieces into bins 
+items appear at the top of the screen. 
+player clicks on the container that the item belongs.
+
+(stretch)Player drags pieces into bins 
+
 Points accumulate for sorted plastics
-strikes given for mis sorted plastics
+strikes given for mis-sorted plastics
 Timer ends and score is tallied up. 
 certificate given if score is above >=90%.
 Game over if mis-sorted plastics.  
