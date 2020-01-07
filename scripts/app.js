@@ -20,6 +20,7 @@ document.querySelector(".round2").addEventListener("click", ()=>{
 
         console.log('compost pared');
 
+        addItem();
       }
     
       // addItem();
@@ -34,6 +35,7 @@ document.querySelector(".round2").addEventListener("click", ()=>{
       if(d){
         // removeItem(d);
         d[0].remove();
+        addItem();
         console.log('grocery to be item removed!');
 
       }
@@ -48,6 +50,7 @@ document.querySelector(".round2").addEventListener("click", ()=>{
       if(e){
 
         e[0].remove();
+        addItem();
         // removeItem(e[0]);
 
         console.log('to remove askcity block');
@@ -65,6 +68,7 @@ document.querySelector(".round2").addEventListener("click", ()=>{
       if(f){
 
         f[0].remove();
+        addItem();
         // removeItem(f);
 
         console.log('local recycle block removed');
