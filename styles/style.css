@@ -4,7 +4,7 @@
   width:  100px;
   height: 100px;
   margin:  90px 0 0 30%;
-  background-color: rgb(230, 142, 142);
+  background-color: rgb(224, 109, 109);
   position: fixed;
   top: 0;
 
@@ -15,7 +15,7 @@
   width:  100px;
   height: 100px;
   margin:  90px 0 0 40%;
-  background-color: rgb(244, 12, 12);
+  background-color: rgb(61, 128, 69);
   position: fixed;
   top: 0;
 
@@ -24,7 +24,7 @@
   width:  100px;
   height: 100px;
   margin:  90px 0 0 50%;
-  background-color: rgb(85, 195, 235);
+  background-color: rgb(40, 220, 233);
   position: fixed;
   top: 0;
 
@@ -96,7 +96,7 @@ html, body {
     margin-right: 5%;
     margin-left: 25%;
     display: inline-block;
-    background-color: rgb(65, 102, 9);
+    background-color: rgb(61, 128, 69);
     position:relative;
     
   }
@@ -123,7 +123,7 @@ html, body {
     height: 15vh;
     margin-right: 5%;
     display: inline-block;
-    background-color: rgb(19, 241, 19);
+    background-color: rgb(30, 235, 23);
     position:relative;
  
   }

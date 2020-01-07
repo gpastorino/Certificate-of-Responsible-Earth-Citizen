@@ -43,8 +43,9 @@ Monday:
 - Crude Designs completed/basic layout:  html and css.
     - Crude designs (squares/shapes)
 - Base file structures.
-- Example of drag and drop functionality completed.
-- Example of falling objects continued.   
+- Example of drag and drop functionality completed. 
+    - MVP:  Items appear at the top of the screen, to be matched with a category click event at the bottom. 
+    - Above the MVP:  Example of falling objects continued.   
     - This entails multiple classes, with starting at the top of the screen, to falling to the bottom of the screen.  
     - Movement speed
 

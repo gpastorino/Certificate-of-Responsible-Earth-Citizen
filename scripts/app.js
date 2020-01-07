@@ -1,49 +1,100 @@
-// $('.round2').on('click', ()=>{
-//     // console.log('Game Start')
-//     alert('Game Start!');
-//     // setTimer()
-// });  //this codes the button
+
+
 
 
 let time;
-
-
-// function showDiv() {
-//     document.getElementById('welcomeDiv').style.display = "block";
-//  }
-
-
 console.log('Welcome to Earthling Resposibility Program...');
 
 document.querySelector(".round2").addEventListener("click", ()=>{
     console.log('Game Start');
-    time = 5;
-    // setTimer();
+    time = 100;
+    setTimer();
     addItem();
+
+    document.querySelector(".compost").addEventListener("click", ()=>{
+
+      let c = document.getElementsByClassName("compost-item");
+
+      if(c){
+        c[0].remove();
+
+        console.log('compost pared');
+
+      }
+    
+      // addItem();
+    });
+
+    document.querySelector(".grocery").addEventListener("click", ()=>{
+
+      // console.log('grocery button');
+      // addItem();
+
+      let d = document.getElementsByClassName("grocerystore-item");
+      if(d){
+        // removeItem(d);
+        d[0].remove();
+        console.log('grocery to be item removed!');
+
+      }
+
+    });
+
+    document.querySelector(".askcity").addEventListener("click", ()=>{
+
+      let e = document.getElementsByClassName("askcity-item");
+      // console.log('ask city button');
+      // addItem();
+      if(e){
+
+        e[0].remove();
+        // removeItem(e[0]);
+
+        console.log('to remove askcity block');
+
+      }
+
+    });
+
+    document.querySelector(".local").addEventListener("click", ()=>{
+
+      // console.log('local recycle button');
+      // addItem();
+
+      let f = document.getElementsByClassName("local-recycle-item");
+      if(f){
+
+        f[0].remove();
+        // removeItem(f);
+
+        console.log('local recycle block removed');
+
+      }
+
+    });
+
   });
 
-// addEventListener
-// $('.round2').on('click',()=>{
-//     console.log('Game Start');
-//     time = 5;
-//     setTimer();
-//     addItem();
-//   });
-
 function addItem(){
+  //randomize a location .. this will be harder.
 
-    let compostItem= document.createElement("div"); // create the html element just takes the div here. 
-    //modify the element with classes or id.  
-    //add any text or html to the element. (whatever to appear inside the div).
-    //attach the element to an existing element in the DOM.  
-    compostItem.className = "compost-item";
-    document.querySelector(".items").appendChild(compostItem);
+    const generateItemClassName = () => {
+      const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
+      const index = Math.floor(Math.random() * itemsArray.length)
+      return itemsArray[index];
+    }
 
-
-//     (".items").append( ("<div class="compost-item"></div>"));
+    let randomItem = document.createElement("div"); 
+    randomItem.className = generateItemClassName();
+    document.querySelector(".items").appendChild(randomItem);
 }
 
 
+
+
+
+
+//next is to link an event to create a new addItem, and to remove the old addItem.  
 
 const setTimer = () => {
     // function to run , time interval
@@ -80,32 +131,32 @@ const setTimer = () => {
 //     });
     
 
-    const createSquares1 = numberOfSquares =>    //numberOfSquares is the parameter. 
-    {
-    const $squares = $('.squares');
-    for (let i = 1; i < numberOfSquares; i++) {
-        const $square = $('<div class="square" />')
-        $squares.append($square);
-    }
-}    
+//     const createSquares1 = numberOfSquares =>    //numberOfSquares is the parameter. 
+//     {
+//     const $squares = $('.squares');
+//     for (let i = 1; i < numberOfSquares; i++) {
+//         const $square = $('<div class="square" />')
+//         $squares.append($square);
+//     }
+// }    
 
 // this one is from the description on the poke-a-square lab.  
-const createSquares2 = (numberOfSquares) => {
-    for (let i = 0; i < NumberOfSquares; i++){
-        const square = $('<div/>')
-        $('.squares').append(square)
-    }
-  }
+// const createSquares2 = (numberOfSquares) => {
+//     for (let i = 0; i < NumberOfSquares; i++){
+//         const square = $('<div/>')
+//         $('.squares').append(square)
+//     }
+//   }
 
 
-  const createSquares3 = numberOfSquares => {
-    const $squares = $('.squares');
-    for (let i = 1; i <= numberOfSquares; i++) {
-      const $square = $('<div class="square"/>')
-      $square.css('background-color',applyRandomColor());
-     $squares.append($square);
-    }
-  }
+  // const createSquares3 = numberOfSquares => {
+  //   const $squares = $('.squares');
+  //   for (let i = 1; i <= numberOfSquares; i++) {
+  //     const $square = $('<div class="square"/>')
+  //     $square.css('background-color',applyRandomColor());
+  //    $squares.append($square);
+  //   }
+  // }
 
 
 
@@ -142,3 +193,67 @@ const createSquares2 = (numberOfSquares) => {
 
 
 //   $('h1').text(`GAME OVER score: ${score}`);
+
+
+// addEventListener
+// $('.round2').on('click',()=>{
+//     console.log('Game Start');
+//     time = 5;
+//     setTimer();
+//     addItem();
+//   });
+
+
+// $('.round2').on('click', ()=>{
+//     // console.log('Game Start')
+//     alert('Game Start!');
+//     // setTimer()
+// });  //this codes the button
+
+
+//this is the process to do the item creation on the page:  
+// let compostItem= document.createElement("div"); // create the html element just takes the div here. 
+//modify the element with classes or id.  
+//add any text or html to the element. (whatever to appear inside the div).
+//attach the element to an existing element in the DOM.  
+// compostItem.className = "compost-item";
+// document.querySelector(".items").appendChild(compostItem);
+
+
+
+// This stuff is old code for the item randomization: 
+  //randomize an item
+    // let groceryItem = document.createElement("div"); 
+    // compostItem.className = "grocerystore-item";
+    // document.querySelector(".items").appendChild(groceryItem);
+
+    // let askCityItem = document.createElement("div");  
+    // compostItem.className = "askcity-item";
+    // document.querySelector(".items").appendChild(askCityItem);
+
+    // let localItem = document.createElement("div"); 
+    // compostItem.className = "local-recycle-item";
+    // document.querySelector(".items").appendChild(localItem);
+
+    // applyRandomItem();
+
+//     (".items").append( ("<div class="compost-item"></div>"));
+
+
+
+//this was the code I used for the random color object.  
+// const createSquares = numberOfSquares => {
+//   const $squares = $('.squares');
+//   for (let i = 1; i <= numberOfSquares; i++) {
+//     const $square = $('<div class="square"/>')
+//     $square.css('margin',applyRandomItem());
+//    $squares.append($square);
+//   }
+// }
+
+
+
+//this part will be complicated. 
+// const applyRandomLocation = () => {
+//   const
+// }
