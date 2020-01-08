@@ -7,7 +7,7 @@
   background-color: rgb(224, 109, 109);
   position: fixed;
   top: 0;
-  z-index: 1;
+  /* z-index: -1; */
 
 
 }
@@ -19,7 +19,7 @@
   background-color: rgb(61, 128, 69);
   position: fixed;
   top: 0;
-  z-index: 1;
+  /* z-index: -1; */
 
 }
 .askcity-item {
@@ -29,7 +29,7 @@
   background-color: rgb(40, 220, 233);
   position: fixed;
   top: 0;
-  z-index: 1;
+  /* z-index: -1; */
 
 }
 
@@ -40,7 +40,7 @@
   background-color: rgb(30, 235, 23);
   position: fixed;
   top: 0;
-  z-index: 1;
+  /* z-index: -1; */
 
 }
 
@@ -50,7 +50,7 @@
   height: 100px;
   position: fixed;
   margin: 90px 0 0 20%;
-  z-index: 1;
+  /* z-index: -1; */
 }
 
 
@@ -66,7 +66,7 @@ html, body {
     flex-direction: column;
     /* min-height: 50%; */
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   header {
@@ -77,7 +77,7 @@ html, body {
     position: sticky;
     padding: 0 0 0 25%;
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   h3 {
@@ -86,7 +86,7 @@ html, body {
     width: 50%;
     border-radius: 10%;
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
 
   }
 
@@ -95,12 +95,12 @@ html, body {
     background-color: white;
     border-radius: 10%;
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   .score {
     font-style: bold;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   .compost {
@@ -111,7 +111,7 @@ html, body {
     display: inline-block;
     background-color: rgb(61, 128, 69);
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
     
   }
   .grocery {
@@ -121,7 +121,7 @@ html, body {
     display: inline-block;
     background-color: rgb(224, 109, 109);
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
    
   }
   .askcity {
@@ -131,7 +131,7 @@ html, body {
     display: inline-block;
     background-color: rgb(40, 220, 233);
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
  
   }
   .local {
@@ -141,7 +141,7 @@ html, body {
     display: inline-block;
     background-color: rgb(30, 235, 23);
     position:relative;
-    z-index: 1;
+    /* z-index: 1; */
  
   }
 
@@ -160,7 +160,7 @@ html, body {
     position:relative;
     /* margin-top: 10%; */
     /* look up the dimensional effect that will place each collector at the bottom of the page */
-    z-index: 1;
+    /* z-index: 1; */
   }
     
 
@@ -172,7 +172,7 @@ html, body {
 
 */
 
-    z-index: 1;
+    /* z-index: 1; */
   }
 
 
@@ -206,7 +206,7 @@ html, body {
     height: 190px;
     /* position: relative; */
     position:relative;
-    z-index: 2;
+    /* z-index: 1; */
   }
 
   /* .round3 {
@@ -226,12 +226,29 @@ html, body {
 
   /* }  */
 
-  .certificate {
+  /* .certificate {
     width: 300px;
     height: 500px;
-    z-index: -1; 
     background-color: red;
-    display:none; 
+    position: fixed;
+    margin: 40px 40%;
+  } */
+
+
+   /* z-index: 1;  */
+      /* display:none;  */
+
+  #cert {
+    width: 300px;
+    height: 500px;
+    background: gold;
+
   }
 
+  #game-over {
 
+    width: 300px;
+    height: 500px;
+    background: red;
+
+  }

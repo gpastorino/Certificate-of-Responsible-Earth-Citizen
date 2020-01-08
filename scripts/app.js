@@ -8,13 +8,12 @@ console.log('Welcome to Earthling Resposibility Program...');
 
 document.querySelector(".round2").addEventListener("click", ()=>{
     console.log('Game Start');
-    time = 7;
+    time = 10;
     score = 0; 
     setTimer();
     addItem();
-    function stopTimer() {
-      clearTimeout(setTimer);
-    }
+
+
 
     document.querySelector(".compost").addEventListener("click", ()=>{
       score++
@@ -89,32 +88,43 @@ function addItem(){
 
     const generateItemClassName = () => {
       const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
-      const index = Math.floor(Math.random() * itemsArray.length)
+      const index = Math.floor(Math.random() * itemsArray.length);
       return itemsArray[index];
     }
+    
 
     let randomItem = document.createElement("div"); 
     randomItem.className = generateItemClassName();
     document.querySelector(".items").appendChild(randomItem);
+
+
 }
 
-
-
-
-
-
-//next is to link an event to create a new addItem, and to remove the old addItem.  
+// =================================================================================//
 
 const setTimer = () => {
     // function to run , time interval
     const timer = setInterval(()=>{
       console.log(time)
       if(time === 0){
+
+
+        //need a timer stop function here. 
+        stopTimer();
+
         console.log('Time is Up!');
+
         //will create a condition here that if the user has scored greater than 90%, then they get a certificate. 
         if(score>=10){
 
+
+       
+
           certificate();
+
+
+
+
         }else{
 
         //if the user gets below 90% or gets 3 strikes, then the game refreshes to return location.reload(true);
@@ -122,8 +132,8 @@ const setTimer = () => {
         //what do I need to do here to reset the game?  To refresh the page.  
 
         // debugger;
-        gameOver();
-        return alert('GAME OVER:  Refresh to try again!')
+        gameEnd();
+        // return alert('GAME OVER:  Refresh to try again!')
         // .reload();
 
         return location.reload(true);
@@ -133,31 +143,24 @@ const setTimer = () => {
       updateTime();
     },1000);
 
- 
-  
   }
-
+//will need something like this for the score! 
   const updateTime = () => {
     $('#timer').text(`timer: ${time}s`);
   }
 
   
-
-
-
-function gameOver(){
+function gameEnd(){
 //tally up the points
 //"you only got x points. Press Try again!"
 //"you've succeeded in scoring x points!  Congratulations!"  (Shows the Certification)
 
   if(score<=10){
-
-
-
     console.log("Didn't make it.  Restart!");
 
-  }else{
+    gameOver();
 
+  }else{
     console.log("Congratulations!  Here's your Certification!");
     certificate();
   }
@@ -166,38 +169,72 @@ function gameOver(){
 //continue with class stuffs for tomorrow-  get the certificate going.  
 function certificate(){
 
-    displayCertificate();
+  document.querySelector('body1').remove();
+  document.querySelector('footer').remove();
 
-  const generateItemClassName = () => {
-    const itemsArray = ['certificate'];
-    return itemsArray[0];
-  }
+  var certificateOnDOM = document.createElement('div');
+  certificateOnDOM.id="cert";
+  certificateOnDOM.innerText= "Here's Your Excellent Certificate of Excellence!";
+  document.body.appendChild(certificateOnDOM);
 
-  let cert = document.createElement("div"); 
-  cert.className = generateItemClassName();
+}
+
+function gameOver(){
+
+  document.querySelector('body1').remove();
+  document.querySelector('footer').remove();
+
+  var gameOverOnDOM = document.createElement('div');
+  gameOverOnDOM.id="game-over";
+  gameOverOnDOM.innerText= "Try Again!";
+  document.body.appendChild(gameOverOnDOM);
+
+}
+
+
+
+    //where does this go?  
+    function stopTimer() {
+      clearTimeout(setTimer);
+    }
+
+
+// ==================================================================================//
+  // cert.className = certificate;
+  // document.querySelector("")
   
   // var y = document.getElementsByClassName('div');
 
-let childNode = document.createElement('<div class="items"></div>');
-  document.querySelector(".certificate").appendChild(childNode);
-
-  document.getElementsByClassName("items ").style.display = "none";
-  document.getElementsByClassName("statsbox").style.display = "none";
-  document.getElementsByClassName("recyclecontainers").style.display = "none";
-  document.getElementsByClassName("round2").style.display = "none";
-  // display: none;
+// let childNode = document.createElement('<div class="certificate"></div>');
+//   document.querySelector(".certificate").appendChild(childNode);
 
 
-}
+ // display: none;  if I want to remove things here.  
+  // document.getElementsByClassName("items ").style.display = "none";
+  // document.getElementsByClassName("statsbox").style.display = "none";
+  // document.getElementsByClassName("recyclecontainers").style.display = "none";
+  // document.getElementsByClassName("round2").style.display = "none";
+ 
 
-function displayCertificate() {
-  var x = document.getElementsByClassName('certificate');
-  if (x[0].style.display === 'none') {
-    x[0].style.display = 'block';
-  } else {
-    x[0].style.display = 'none';
-  }
-}
+
+
+    // displayCertificate();
+// function displayCertificate() {
+//   var x = document.getElementsByClassName('certificate');
+//   if (x[0].style.display === 'none') {
+//     x[0].style.display = 'block';
+//   } else {
+//     x[0].style.display = 'none';
+//   }
+// }
+
+//a few things to work on:
+//get time to stop for timer
+//get score to populate onto a certificate
+//get dom elements to get removed from the dom upon a event
+
+//
+
 
 
 
@@ -337,3 +374,42 @@ function displayCertificate() {
 //   const
 // }
 
+  // const generateItemClassName = () => {
+  //   const itemsArray = ['certificate'];
+  //   return itemsArray[0];
+  // }
+
+
+// displayCertificate();
+// function displayCertificate() {
+//   var x = document.getElementsByClass('cert');
+//   if (x[0].style.display === 'none') {
+//     x[0].style.display = 'block';
+//   } else {
+//     x[0].style.display = 'none';
+//   }
+// }
+
+
+// d3.('#1').remove();
+// d3.('#2').remove();
+
+// function certificate(){
+
+//   // const body = 
+//   document.querySelector('body1').remove();
+//   document.querySelector('footer').remove();
+
+//   var certificateOnDOM = document.createElement('div');
+//   certificateOnDOM.id="cert";
+//   // certificateOnDOM.style.width="300px";
+//   // certificateOnDOM.style.height="500px";
+//   // certificateOnDOM.style.background = "red";
+//   // certificateOnDOM.style.position="fixed"
+//   certificateOnDOM.innerText= "Here's Your Excellent Certificate of Excellence!";
+//   document.body.appendChild(certificateOnDOM);
+
+// }
+
+
+//next is to link an event to create a new addItem, and to remove the old addItem.  
