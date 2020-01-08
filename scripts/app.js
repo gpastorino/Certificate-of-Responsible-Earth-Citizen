@@ -3,26 +3,31 @@
 
 
 let time;
+let score;
 console.log('Welcome to Earthling Resposibility Program...');
 
 document.querySelector(".round2").addEventListener("click", ()=>{
     console.log('Game Start');
-    time = 100;
+    time = 7;
+    score = 0; 
     setTimer();
     addItem();
+    function stopTimer() {
+      clearTimeout(setTimer);
+    }
 
     document.querySelector(".compost").addEventListener("click", ()=>{
-
+      score++
       let c = document.getElementsByClassName("compost-item");
 
       if(c){
         c[0].remove();
 
-        console.log('compost pared');
+        console.log('compost paired');
 
         addItem();
       }
-    
+    console.log(`this is the  ${score}`);
       // addItem();
     });
 
@@ -30,7 +35,7 @@ document.querySelector(".round2").addEventListener("click", ()=>{
 
       // console.log('grocery button');
       // addItem();
-
+      score++
       let d = document.getElementsByClassName("grocerystore-item");
       if(d){
         // removeItem(d);
@@ -39,11 +44,11 @@ document.querySelector(".round2").addEventListener("click", ()=>{
         console.log('grocery to be item removed!');
 
       }
-
+      console.log(`this is the  ${score}`);
     });
-
+    
     document.querySelector(".askcity").addEventListener("click", ()=>{
-
+      score++
       let e = document.getElementsByClassName("askcity-item");
       // console.log('ask city button');
       // addItem();
@@ -56,14 +61,14 @@ document.querySelector(".round2").addEventListener("click", ()=>{
         console.log('to remove askcity block');
 
       }
-
+      console.log(`this is the  ${score}`);
     });
 
     document.querySelector(".local").addEventListener("click", ()=>{
 
       // console.log('local recycle button');
       // addItem();
-
+      score++
       let f = document.getElementsByClassName("local-recycle-item");
       if(f){
 
@@ -76,7 +81,7 @@ document.querySelector(".round2").addEventListener("click", ()=>{
       }
 
     });
-
+    console.log(`this is the  ${score}`);
   });
 
 function addItem(){
@@ -107,24 +112,94 @@ const setTimer = () => {
       if(time === 0){
         console.log('Time is Up!');
         //will create a condition here that if the user has scored greater than 90%, then they get a certificate. 
-        //if(score>=90%)
+        if(score>=10){
+
+          certificate();
+        }else{
 
         //if the user gets below 90% or gets 3 strikes, then the game refreshes to return location.reload(true);
 
         //what do I need to do here to reset the game?  To refresh the page.  
-        // return reload();
+
+        // debugger;
+        gameOver();
+        return alert('GAME OVER:  Refresh to try again!')
+        // .reload();
 
         return location.reload(true);
         }
-        time--;
-        updateTime();
-      
+      }
+      time--;
+      updateTime();
     },1000);
+
+ 
+  
   }
 
   const updateTime = () => {
     $('#timer').text(`timer: ${time}s`);
   }
+
+  
+
+
+
+function gameOver(){
+//tally up the points
+//"you only got x points. Press Try again!"
+//"you've succeeded in scoring x points!  Congratulations!"  (Shows the Certification)
+
+  if(score<=10){
+
+
+
+    console.log("Didn't make it.  Restart!");
+
+  }else{
+
+    console.log("Congratulations!  Here's your Certification!");
+    certificate();
+  }
+}
+
+//continue with class stuffs for tomorrow-  get the certificate going.  
+function certificate(){
+
+    displayCertificate();
+
+  const generateItemClassName = () => {
+    const itemsArray = ['certificate'];
+    return itemsArray[0];
+  }
+
+  let cert = document.createElement("div"); 
+  cert.className = generateItemClassName();
+  
+  // var y = document.getElementsByClassName('div');
+
+let childNode = document.createElement('<div class="items"></div>');
+  document.querySelector(".certificate").appendChild(childNode);
+
+  document.getElementsByClassName("items ").style.display = "none";
+  document.getElementsByClassName("statsbox").style.display = "none";
+  document.getElementsByClassName("recyclecontainers").style.display = "none";
+  document.getElementsByClassName("round2").style.display = "none";
+  // display: none;
+
+
+}
+
+function displayCertificate() {
+  var x = document.getElementsByClassName('certificate');
+  if (x[0].style.display === 'none') {
+    x[0].style.display = 'block';
+  } else {
+    x[0].style.display = 'none';
+  }
+}
+
+
 
 
 // $('button').on('click', ()=>{   this is for any button.  
@@ -261,3 +336,4 @@ const setTimer = () => {
 // const applyRandomLocation = () => {
 //   const
 // }
+
