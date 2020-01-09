@@ -1,10 +1,10 @@
 
 
 .grocerystore-item {
-  width:  100px;
-  height: 100px;
+  width:  250px;
+  height: 321px;
   margin:  90px 0 0 30%;
-  background-color: rgb(224, 109, 109);
+  background-image: url('../imgs/plasticbag1a.png');
   position: fixed;
   top: 0;
   /* z-index: -1; */
@@ -13,20 +13,21 @@
 }
 
 .compost-item {
-  width:  100px;
-  height: 100px;
+  width:  250px;
+  height: 275px;
   margin:  90px 0 0 40%;
-  background-color: rgb(61, 128, 69);
+  background-image: url('../imgs/pizzaboxright.png');
   position: fixed;
   top: 0;
   /* z-index: -1; */
 
 }
 .askcity-item {
-  width:  100px;
-  height: 100px;
+  width:  300px;
+  height: 221px;
   margin:  90px 0 0 50%;
-  background-color: rgb(40, 220, 233);
+  background-image: url('../imgs/shreddedperfect.png');
+
   position: fixed;
   top: 0;
   /* z-index: -1; */
@@ -34,10 +35,11 @@
 }
 
 .local-recycle-item {
-  width:  100px;
-  height: 100px;
+  width:  300px;
+  height: 385px;
   margin:  90px 0 0 60%;
-  background-color: rgb(30, 235, 23);
+  /* background-color: rgb(30, 235, 23); */
+  background-image: url('../imgs/battery3.png');
   position: fixed;
   top: 0;
   /* z-index: -1; */
@@ -53,7 +55,9 @@
   /* z-index: -1; */
 }
 
-
+.recycle {
+  background-image: url('./imgs/battery1.png');
+}
 /* <div class="compost-item"></div>
 <div class="grocerystore-item"></div>
 <div class="askcity-item"></div>
@@ -98,7 +102,7 @@ html, body {
     /* z-index: 1; */
   }
 
-  .score {
+  #score {
     font-style: bold;
     /* z-index: 1; */
   }
@@ -250,5 +254,7 @@ html, body {
     width: 300px;
     height: 500px;
     background: red;
+    position: fixed;
+    z-index: 1;
 
   }

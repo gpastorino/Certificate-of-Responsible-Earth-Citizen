@@ -1,13 +1,27 @@
 
-//revisit the positioning issue with the DOM for the try again page.  
 
 //randomize the block locations
-
 //populate the Certificate
+//when the timer stops, and the user has not succeeded, 
+//then the page refreshes, but with the message "Try again".
+//i can do this by adding the button onto the try again popup! 
+
+//substitute the squares for actual picture objects. 
+
 
 let time;
 let score;
 console.log('Welcome to Earthling Resposibility Program...');
+
+var newDiv = document.createElement('div');
+var newImg = document.createElement('img');
+newImg.setAttribute('src','imgs/battery1.png');
+var addHere = document.getElementsByClassName('local-recycle-item');
+addHere.appendChild(newDiv);
+addHere.appendChild(newImg);
+
+
+
 
 var play = document.querySelector(".round2").addEventListener("click", ()=>{
     console.log('Game Start');
@@ -60,9 +74,6 @@ var play = document.querySelector(".round2").addEventListener("click", ()=>{
       score++
       updateScore();
       let f = document.getElementsByClassName("local-recycle-item");
-
-
-
       if(f){
         f[0].remove();
         addItem();
@@ -101,7 +112,7 @@ const setTimer = () => {
 
 
         console.log('Time is Up!');
-      
+        //will create a condition here that if the user has scored greater than 90%, then they get a certificate. 
         if(score>=10){
           certificate();
         }else{
@@ -109,7 +120,9 @@ const setTimer = () => {
         gameOverLose();
 
         gameEnd();
-
+        
+        //blotted this out: 
+        // return location.reload(true);
         }
       }
       time--;
@@ -117,7 +130,10 @@ const setTimer = () => {
     },1000);
   }
 
-
+// function stopTimer() {
+//       clearInterval();
+//       }
+  
 
 const updateTime = () => {
     $('#timer').text(`timer: ${time}s`);
@@ -128,9 +144,23 @@ const updateScore = () => {
   }
 
 function gameEnd(timer){
+//tally up the points
+//"you only got x points. Press Try again!"
+//"you've succeeded in scoring x points!  Congratulations!"  (Shows the Certification)
+  
+//blotted this out:  
 
+// if(score<=10){
+  //   console.log("Didn't make it.  Restart!");
+  //   // gameOver();
     clearInterval(timer);
 
+  //blotted this out:  
+
+  // }else{
+  //   console.log("Congratulations!  Here's your Certification!");
+  //   certificate();
+  // }
 }
 function certificate(){
 
@@ -150,10 +180,6 @@ function gameOverWin(){
 
 }
 
-
-//need the button to the replay connected to this game over div
-//need this div to appear in front of everything at the main page.  
-
 function gameOverLose(){
 
   var gameOverOnDOM = document.createElement('div');
@@ -161,6 +187,9 @@ function gameOverLose(){
   // gameOverOnDOM.style.position="fixed";
   gameOverOnDOM.innerText= "Try Again!";
   document.body.appendChild(gameOverOnDOM);
+
+
+  //revisit the positioning issue with the DOM for the try again page.  
 
   //blotted out to get the lose working.
   // var play= document.createElement('div');
@@ -174,19 +203,3 @@ function gameOverLose(){
 
 
 // ==================================================================================//
-
-// var localRecycle = document.createElement('div');
-// localRecycle.classList.add('recycle');
-// // var localRecycleImage = document.createElement('img');
-// // localRecycleImage.setAttribute('src','imgs/battery1.png');
-// var aRealItem = document.getElementsByClassName('local-recycle-item');
-// aRealItem.appendChild(localRecycle);
-// aRealItem.appendChild(localRecycleImage);
-
-      // var localRecycle = document.createElement('div');
-      // var localRecycleImage = document.createElement('img');
-      // localRecycleImage.setAttribute('src','imgs/battery1.png');
-      // var aRealItem = document.getElementsByClassName('local-recycle-item');
-      // aRealItem.appendChild(localRecycle);
-      // aRealItem.appendChild(localRecycleImage);
-      
