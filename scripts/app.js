@@ -12,33 +12,21 @@ console.log('Welcome to Earthling Resposibility Program...');
 document.querySelector(".round2").addEventListener("click", playForCertificate);
 
 
-function randomLocation(){
-
-const valueArray = ['a', 'b', 'c', 'd'];
-
+// function randomLocation(){
+// const valueArray = ['a', 'b', 'c', 'd'];
 //repeat the math.floor(Math.random) 4 times. ONe for each of the values, then check if they produce random locations for one of the attributes.  
-
-
-
-
-
-
-
 //constraints for these to work in.  
 // width: 800px;
 // height: 100px;
 
-  `${a}px ${b}px ${c}px ${d}px`
-}
 
 
- const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
+function randomizeItemLocation(){
+
+   const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
       const index = Math.floor(Math.random() * itemsArray.length);
       return itemsArray[index];
-    }
-
-
-
+}
 
 
 function playForCertificate(){
@@ -47,15 +35,26 @@ function playForCertificate(){
     score = 0; 
 
     setTimer();
-
     addItem();
 
-
+    document.querySelector(".grocery").addEventListener("click", ()=>{
+      score++
+      updateScore();
+    
+      let d = document.getElementsByClassName("grocerystore-item");
+      if(d){
+        d[0].remove();
+        addItem();
+        console.log('grocery to be item removed!');
+      }
+      console.log(`this is the  ${score}`);
+    });
+    
     document.querySelector(".compost").addEventListener("click", ()=>{
       score++
       updateScore();
 
-      document.getElementsByClassName("compost-item").style.margin = "`${a}px ${b}px ${c}px ${d}px`";
+      // document.getElementsByClassName("compost-item").style.margin = "`${a}px ${b}px ${c}px ${d}px`";
 
       let c = document.getElementsByClassName("compost-item");
       if(c){
@@ -64,18 +63,6 @@ function playForCertificate(){
         addItem();
       }
     console.log(`this is the  ${score}`);
-    });
-
-    document.querySelector(".grocery").addEventListener("click", ()=>{
-      score++
-      updateScore();
-      let d = document.getElementsByClassName("grocerystore-item");
-      if(d){
-        d[0].remove();
-        addItem();
-        console.log('grocery to be item removed!');
-      }
-      console.log(`this is the  ${score}`);
     });
 
     document.querySelector(".askcity").addEventListener("click", ()=>{
@@ -97,7 +84,6 @@ function playForCertificate(){
       let f = document.getElementsByClassName("local-recycle-item");
 
 
-
       if(f){
         f[0].remove();
         addItem();
@@ -109,7 +95,6 @@ function playForCertificate(){
   }
 
 
-
 function addItem(){
   //randomize a location .. this will be harder.
     const generateItemClassName = () => {
@@ -119,6 +104,32 @@ function addItem(){
     }
     let randomItem = document.createElement("div"); 
     randomItem.className = generateItemClassName();
+
+
+
+    function check(){
+
+      const leftMarginPercent =['20%', '25%', '30%','35%', '40%', '45%', '50%','55%', '60%','65%', '70%'];
+      const index = Math.floor(Math.random() * leftMarginPercent.length);
+      return leftMarginPercent[index];
+    }
+
+
+    //remember to only reference the dom when something is in the dom.  Not before.  This isn't in the dom yet, and can just work as a free variable assigned a new attribite. 
+
+    randomItem.style.margin = `90 0 0 ${check()}`;
+
+    // randomItem
+    //location for random location function:
+// ================================================================================//
+
+// const color = $(event.target).css('background-color');
+// document.getElementById("myDiv").style.marginLeft = "50px";
+//then, can I do this?
+// document.getElementById("myDiv").style.marginLeft = rightMarginPercent[index];
+
+//=================================================================================//
+
     document.querySelector(".items").appendChild(randomItem);
 }
 
