@@ -9,7 +9,39 @@ let time;
 let score;
 console.log('Welcome to Earthling Resposibility Program...');
 
-var play = document.querySelector(".round2").addEventListener("click", ()=>{
+document.querySelector(".round2").addEventListener("click", playForCertificate);
+
+
+function randomLocation(){
+
+const valueArray = ['a', 'b', 'c', 'd'];
+
+//repeat the math.floor(Math.random) 4 times. ONe for each of the values, then check if they produce random locations for one of the attributes.  
+
+
+
+
+
+
+
+//constraints for these to work in.  
+// width: 800px;
+// height: 100px;
+
+  `${a}px ${b}px ${c}px ${d}px`
+}
+
+
+ const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
+      const index = Math.floor(Math.random() * itemsArray.length);
+      return itemsArray[index];
+    }
+
+
+
+
+
+function playForCertificate(){
     console.log('Game Start');
     time = 10;
     score = 0; 
@@ -22,6 +54,9 @@ var play = document.querySelector(".round2").addEventListener("click", ()=>{
     document.querySelector(".compost").addEventListener("click", ()=>{
       score++
       updateScore();
+
+      document.getElementsByClassName("compost-item").style.margin = "`${a}px ${b}px ${c}px ${d}px`";
+
       let c = document.getElementsByClassName("compost-item");
       if(c){
         c[0].remove();
@@ -71,7 +106,7 @@ var play = document.querySelector(".round2").addEventListener("click", ()=>{
     });
 
     console.log(`this is the  ${score}`);
-  });
+  }
 
 
 
@@ -108,7 +143,7 @@ const setTimer = () => {
 
         gameOverLose();
 
-        gameEnd();
+        gameEnd(timer);
 
         }
       }
@@ -154,15 +189,32 @@ function gameOverWin(){
 //need the button to the replay connected to this game over div
 //need this div to appear in front of everything at the main page.  
 
-function gameOverLose(){
+function reRun(){
 
+  document.getElementById('game-over').remove();
+
+
+  playForCertificate();
+
+}
+
+
+function gameOverLose(){
+  console.log('game over lose trigger')
   var gameOverOnDOM = document.createElement('div');
   gameOverOnDOM.id="game-over";
   // gameOverOnDOM.style.position="fixed";
   gameOverOnDOM.innerText= "Try Again!";
+  gameOverOnDOM.innerHTML+= "<div id=try-again></div>"
   document.body.appendChild(gameOverOnDOM);
 
-  //blotted out to get the lose working.
+  console.log(document.getElementById('try-again'));
+
+  document.getElementById('try-again');
+
+  document.getElementById('try-again').addEventListener("click", reRun);
+  // document.getElementById("myBtn").addEventListener("click", displayDate);
+  // blotted out to get the lose working.
   // var play= document.createElement('div');
   // play.id="round3";
   // document.getElementById("game-over").appendChild(play);

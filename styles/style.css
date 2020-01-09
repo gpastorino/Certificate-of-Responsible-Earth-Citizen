@@ -243,6 +243,7 @@ html, body {
       /* display:none;  */
 
   #cert {
+
     width: 300px;
     height: 500px;
     background: gold;
@@ -256,5 +257,17 @@ html, body {
     background: red;
     position: fixed;
     z-index: 1;
+    top: 20%;
+    left: 40%;
+  }
+
+  #try-again {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    left: 100px;
+    top: 200px;
+    position: relative;
+    z-index: 2;
 
   }
