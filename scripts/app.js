@@ -147,14 +147,12 @@ const setTimer = () => {
 
 
         console.log('Time is Up!');
-      
         if(score>=10){
           certificate();
+
         }else{
-
-        gameOverLose();
-
-        gameEnd(timer);
+          gameOverLose();
+          gameEnd(timer);
 
         }
       }
@@ -166,8 +164,10 @@ const setTimer = () => {
 
 
 const updateTime = () => {
-    $('#timer').text(`timer: ${time}s`);
+  if(time>=0){  
+  $('#timer').text(`timer: ${time}s`);
   }
+}
 
 const updateScore = () => {
     $('#score').text(`${score}`);
