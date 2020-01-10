@@ -9,7 +9,6 @@
   top: 0;
   /* z-index: -1; */
 
-
 }
 
 .compost-item {
@@ -60,10 +59,7 @@
 .recycle {
   background-image: url('../imgs/battery1.png');
 }
-/* <div class="compost-item"></div>
-<div class="grocerystore-item"></div>
-<div class="askcity-item"></div>
-<div class="local-recycle-item"></div> */
+
 
 html, body {
     font-family: 'Open Sans', sans-serif;
@@ -181,29 +177,10 @@ html, body {
     flex-wrap: nowrap;
     position:relative;
     /* background-color: blue; */
-/* why doesn't flex wrap function work here? 
-
-*/
 
     /* z-index: 1; */
   }
 
-
-  /* .round1 {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 16px;
-    /* margin: 4px 200px; */
-    /* cursor: pointer;
-    border-radius: 50%;
-    height: 110px; */
-    /* position: relative; */
-  /* }  */
   .round2 {
     /* background-color: #4CAF50; */
     background-image: url('../imgs/playbutton copy.png');
@@ -222,35 +199,6 @@ html, body {
     position:relative;
     /* z-index: 1; */
   }
-
-  /* .round3 {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 32px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 16px;
-    margin: 40px 50%;
-    cursor: pointer;
-    border-radius: 50%;
-    height: 150px;
-    /* position: relative; */
-
-  /* }  */
-
-  /* .certificate {
-    width: 300px;
-    height: 500px;
-    background-color: red;
-    position: fixed;
-    margin: 40px 40%;
-  } */
-
-
-   /* z-index: 1;  */
-      /* display:none;  */
 
   #cert {
 
@@ -316,8 +264,6 @@ html, body {
 
   #score-end {
 
-    /* bottom: 100px; */
-    /* left: 500px; */
     width: 200px;
     height: 200px;
     top: 800px;

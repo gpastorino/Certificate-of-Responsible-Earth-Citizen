@@ -1,4 +1,8 @@
 
+
+
+
+//Most recent todos, and notes:  
 //make more than 4 images populate
 //fix flexbox
 //create designs
@@ -31,8 +35,7 @@ function playForCertificate(){
     addItem();
 
     document.querySelector(".grocery").addEventListener("click", ()=>{
-      // score++
-      // updateScore();
+ 
     
       let d = document.getElementsByClassName("grocerystore-item");
       if(d[0]){
@@ -48,11 +51,7 @@ function playForCertificate(){
     });
     
     document.querySelector(".compost").addEventListener("click", ()=>{
-      // score++
-      // updateScore();
-
-      // document.getElementsByClassName("compost-item").style.margin = "`${a}px ${b}px ${c}px ${d}px`";
-
+    
       let c = document.getElementsByClassName("compost-item");
       if(c[0]){
         score++
@@ -67,8 +66,7 @@ function playForCertificate(){
     });
 
     document.querySelector(".askcity").addEventListener("click", ()=>{
-      // score++
-      // updateScore();
+
       let e = document.getElementsByClassName("askcity-item");
       if(e[0]){
 
@@ -83,8 +81,7 @@ function playForCertificate(){
     });
 
     document.querySelector(".local").addEventListener("click", ()=>{
-      // score++
-      // updateScore();
+ 
       let f = document.getElementsByClassName("local-recycle-item");
       // console.log(f)
 
@@ -107,13 +104,13 @@ function playForCertificate(){
 //couldn't get this randomize images to work.  needed the right dom element and class name referenced.  
 
 function addItem(){
-  //randomize a location .. this will be harder.
+
 
   const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
     
   const generateItemClassName = () => {
 
-      //move from strings to objects.  for good.   
+      //note for future:  move from strings to objects. 
    
 
       const index = Math.floor(Math.random()*itemsArray.length);
@@ -247,26 +244,15 @@ function certificate(){
 
   gameOverWin();
 
-  // document.querySelector('body1').remove();
-  // document.querySelector('footer').remove();
-
-  // var certificateOnDOM = document.createElement('div');
-  // certificateOnDOM.id="cert";
-  // certificateOnDOM.innerText= "Here's Your Excellent Certificate of Excellence!";
-  // document.body.appendChild(certificateOnDOM);
-
-
 }
 
 function gameOverWin(){
 
-  // document.querySelector('body1').remove();
-  // document.querySelector('footer').remove();
 
     console.log('game over - but,  SUCCESS')
     var certificateOnDOM = document.createElement('div');
     certificateOnDOM.id="certificate";
-    // gameOverOnDOM.style.position="fixed";
+
     certificateOnDOM.innerText= "CONGRATULATIONS!  Print this window for for your certification.";
     certificateOnDOM.innerHTML+= "<div id=try-again2></div>"
     document.body.appendChild(certificateOnDOM);
@@ -296,7 +282,6 @@ function reRun2(){
   playForCertificate();
 
 }
-
 
 
 function gameOverLose(){
@@ -352,6 +337,6 @@ let score=0;
 }
 
 
-
+//adding audio to html-  this is for the html part:  
 // <audio id='something' src= file location></audio>
 
