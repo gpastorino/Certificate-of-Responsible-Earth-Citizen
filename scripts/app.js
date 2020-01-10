@@ -4,12 +4,7 @@
 
 //Most recent todos, and notes:  
 //make more than 4 images populate
-//fix flexbox
-//create designs
-//where do i put this?  
-//$('#items').empty();
-//when i hit the replay, it starts to score twice.  
-//score is tied to clicks, not to the actual matched scores.  
+ //randomize location seemed to stop working
 
 let time;
 let score;
@@ -146,7 +141,7 @@ function addItem(){
   
         // randomizePix(compostPix);
   
-  
+
       // }else if(randomItem === 'askcity-item'){
       }else if(randomItem == document.getElementsByClassName('askcity-item')){
         // 
@@ -175,10 +170,13 @@ function addItem(){
       return leftMarginPercent[index];
     }
 
-    //remember to only reference the dom when something is in the dom.  Not before.  This isn't in the dom yet, and can just work as a free variable assigned a new attribite. 
-    randomItem.style.margin = `90 0 0 ${check()}`;
+    //note:  remember to only reference the dom when something is in the dom.  
+    //Not before.  This isn't in the dom yet, and can just work as a free variable assigned a new attribite. 
+
+    randomItem.style.margin = `90px 0 0 ${check()}`;
 
     document.querySelector(".items").appendChild(randomItem);
+
 }
 
 const setTimer = () => {
