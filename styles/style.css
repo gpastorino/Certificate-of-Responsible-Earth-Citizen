@@ -58,7 +58,7 @@
 }
 
 .recycle {
-  background-image: url('./imgs/battery1.png');
+  background-image: url('../imgs/battery1.png');
 }
 /* <div class="compost-item"></div>
 <div class="grocerystore-item"></div>
@@ -68,6 +68,7 @@
 html, body {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(245, 245, 129);
+    /* background-image: url('../imgs/landscapebackground.jpg'); */
     /* display: flex; */
     flex-direction: column;
     /* min-height: 50%; */
@@ -115,7 +116,7 @@ html, body {
     margin-right: 5%;
     margin-left: 25%;
     display: inline-block;
-    background-color: rgb(61, 128, 69);
+    background-image: url('../imgs/compostbin2.png');
     position:relative;
     flex-shrink:1;
     /* z-index: 1; */
@@ -126,7 +127,7 @@ html, body {
     height: 15vh;
     margin-right: 5%;
     display: inline-block;
-    background-color: rgb(224, 109, 109);
+    background-image: url('../imgs/grocerystore.png');
     position:relative;
     flex-shrink:1;
     /* z-index: 1; */
@@ -137,7 +138,7 @@ html, body {
     height: 15vh;
     margin-right: 5%;
     display: inline-block;
-    background-color: rgb(40, 220, 233);
+    background-image: url('../imgs/cityhall.png');
     position:relative;
     flex-shrink:1;
     /* z-index: 1; */
@@ -148,7 +149,7 @@ html, body {
     height: 15vh;
     margin-right: 5%;
     display: inline-block;
-    background-color: rgb(30, 235, 23);
+    background-image: url('../imgs/localrecycle.png');
     position:relative;
     flex-shrink:1;
     /* z-index: 1; */
@@ -164,9 +165,10 @@ html, body {
     height: 50px;
     /* height: 50%; */
     background-color: green;
+    /* background-image: url('../imgs/footergrass.png'); */
     color: white;
     padding: 20px;
-    bottom: 0;
+    bottom: 100;
     position:relative;
     /* margin-top: 10%; */
     /* look up the dimensional effect that will place each collector at the bottom of the page */
@@ -203,9 +205,10 @@ html, body {
     /* position: relative; */
   /* }  */
   .round2 {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background-image: url('../imgs/playbutton copy.png');
     border: none;
-    color: white;
+    color: black;
     padding: 32px 32px;
     text-align: center;
     text-decoration: none;
@@ -251,17 +254,18 @@ html, body {
 
   #cert {
 
-    width: 300px;
-    height: 500px;
-    background: gold;
+    width: 1000px;
+    height: 693px;
+    /* background: gold; */
+    background-image: url('../imgs/certificateforearthcitizen');
 
   }
 
   #game-over {
-
-    width: 300px;
-    height: 500px;
-    background: red;
+    background-image: url('../imgs/blankgameover.png');
+    width: 1000px;
+    height: 693px;
+    /* background: red; */
     position: fixed;
     z-index: 1;
     top: 20%;
@@ -271,9 +275,10 @@ html, body {
   #try-again {
     width: 100px;
     height: 100px;
-    background-color: blue;
-    left: 100px;
-    top: 200px;
+    /* background-color: blue; */
+    background-image: url('../imgs/tryagainbutton.png');
+    left: 450px;
+    top: 400px;
     position: relative;
     z-index: 2;
 
@@ -281,9 +286,14 @@ html, body {
 
   #certificate {
 
-    width: 300px;
-    height: 500px;
-    background: gold;
+
+    width: 1000px;
+    height: 693px;
+    /* background: gold; */
+    background-image: url('../imgs/certificateforearthcitizen');
+    /* width: 300px;
+    height: 500px; */
+    /* background: gold; */
     position: fixed;
     z-index: 1;
     top: 20%;
@@ -293,9 +303,12 @@ html, body {
   #try-again2 {
     width: 100px;
     height: 100px;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
+    background-image: url('../imgs/button to retry from victory.png');
+
+
     left: 100px;
-    top: 200px;
+    top: 400px;
     position: relative;
     z-index: 2;
 
@@ -303,10 +316,13 @@ html, body {
 
   #score-end {
 
-    bottom: 100px;
-    width: 100px;
-    height: 100px;
-    background-color: orange;
+    /* bottom: 100px; */
+    /* left: 500px; */
+    width: 200px;
+    height: 200px;
+    top: 800px;
+    /* background-color: red; */
+    background-image: url('../imgs/badgeeeeee.png');
     z-index: 1;
     /* position: fixed; */
 
