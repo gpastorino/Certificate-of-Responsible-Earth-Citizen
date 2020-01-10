@@ -108,60 +108,72 @@ function playForCertificate(){
 }
 
 
+
+
+//couldn't get this randomize images to work.  needed the right dom element and class name referenced.  
+
 function addItem(){
   //randomize a location .. this will be harder.
-    const generateItemClassName = () => {
-      const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
-      const index = Math.floor(Math.random() * itemsArray.length);
+
+  const itemsArray = ['compost-item','grocerystore-item', 'askcity-item' ,'local-recycle-item'];
+    
+  const generateItemClassName = () => {
+
+      //move from strings to objects.  for good.   
+   
+
+      const index = Math.floor(Math.random()*itemsArray.length);
       return itemsArray[index];
+
     }
+
     let randomItem = document.createElement("div"); 
-    randomItem.className = generateItemClassName();
+    randomItem.className = `${generateItemClassName()}`;
 
 
-    if(randomItem === 'grocerystore-item'){
-    // if(randomItem == itemsArray[1]){
-      // 
-      function randomizePix(groceryPix) {
+    // if(randomItem === 'grocerystore-item'){
+
+    if(randomItem == document.getElementsByClassName('grocerystore-item')){
+    
+      function randomizePix(arr) {
         var randomNum = Math.floor(Math.random() * arr.length);
         document.getElementsByClassName("grocerystore-item").src = arr[randomNum];
       }
 
-      let groceryPix = ['../imgs/plasticbag1a.png','../imgs/plasticbag2 copy-add1.png'];
-      randomItem.style.backgroundImage = randomizePix(groceryPix);
+      let groceryPix = ['https://i.imgur.com/Ir8b5E2.png','https://i.imgur.com/eQTx4oP.png'];
+      randomItem.style.backgroundImage = `url(${randomizePix(groceryPix)})`;
 
-    }else if( randomItem =='compost-item'){
-    // }else if( randomItem ==itemsArray[0]){
+    // }else if( randomItem =='compost-item'){
+    }else if(randomItem == document.getElementsByClassName('compost-item')){
       // 
       function randomizePix(compostPix) {
         var randomNum = Math.floor(Math.random() * compostPix.length);
         document.getElementsByClassName("compost-item").src = compostPix[randomNum];
       }
-      let compostPix = ['../imgs/pizzaboxright.png', '../imgs/CompostA-add1.png', '../imgs/compostB-add 2.png'];
-      randomItem.style.backgroundImage = randomizePix(compostPix);
+      let compostPix = ['https://i.imgur.com/ODXTV6A.png', 'https://i.imgur.com/24sxkr3.png', 'https://i.imgur.com/lhygZQ6.png'];
+      randomItem.style.backgroundImage = `url(${randomizePix(compostPix)})`;
 
       // randomizePix(compostPix);
 
 
-    }else if(randomItem === 'askcity-item'){
-    // }else if(randomItem == itemsArray[2]){
+    // }else if(randomItem === 'askcity-item'){
+    }else if(randomItem == document.getElementsByClassName('askcity-item')){
       // 
       function randomizePix(askCityPix) {
         var randomNum = Math.floor(Math.random() * askCityPix.length);
         document.getElementsByClassName("askcity-item").src = askCityPix[randomNum];
       }
-      let askCityPix = ['../imgs/shreddedperfect.png', '../imgs/shredded-add2.png','../imgs/shredded-add3.png'];
-      randomItem.style.backgroundImage = randomizePix(askCityPix);
+      let askCityPix = ['https://i.imgur.com/oEue3Fd.png', 'https://i.imgur.com/0VuOwrm.png','https://i.imgur.com/mqOPc5W.png'];
+      randomItem.style.backgroundImage = `url(${randomizePix(askCityPix)})`;
 
-    }else if(randomItem === 'local') {
-
+    // }else if(randomItem === 'local') {
+    }else if(randomItem == document.getElementsByClassName('local-recycle-item')){
       function randomizePix(localRecyclePix) {
         var randomNum = Math.floor(Math.random() * localRecyclePix.length);
         document.getElementsByClassName("local-recycle-item").src = localRecyclePix[randomNum];
       }
-      let localRecyclePix =['../imgs/battery-add1.png','../imgs/battery-add2.png', '../imgs/battery-add3.png'];
-      randomItem.style.backgroundImage = randomizePix(localRecyclePix);
-
+      let localRecyclePix =['https://i.imgur.com/zCuzBDH.png','https://i.imgur.com/jWjvw4C.png', 'https://i.imgur.com/khA1RWF.png', 'https://i.imgur.com/3MAM0AE.png'];
+      randomItem.style.backgroundImage = `url(${randomizePix(localRecyclePix)})`;
     }
   
     function check(){
@@ -343,3 +355,8 @@ function resetScore(){
 let score=0;
 
 }
+
+
+
+// <audio id='something' src= file location></audio>
+
