@@ -54,8 +54,8 @@ function playForCertificate(){
         d[0].remove();
         addItem();
         console.log('grocery to be item removed!');
-      } else {
-        // wrong.play();
+      }else if( !c[0] || !e[0] || !f[0] ){
+        wrong.play();
       }
       console.log(`this is the  ${score}`);
     });
@@ -82,7 +82,7 @@ function playForCertificate(){
       //   wrong.play();
       // }
     } else {
-      // wrong.play();
+      wrong.play();
     }
     console.log(`this is the  ${score}`);
     });
@@ -112,7 +112,7 @@ function playForCertificate(){
       //   wrong.play();
       // }
     } else {
-      // wrong.play();
+      wrong.play();
     }
       console.log(`this is the  ${score}`);
     });
@@ -123,9 +123,9 @@ function playForCertificate(){
 
       let f = document.getElementsByClassName("local-recycle-item");
     //items to match as wrong:  
-      let c =document.getElementsByClassName("compost-item");
-      let e = document.getElementsByClassName("askcity-item");
-      let d = document.getElementsByClassName("grocerystore-item");
+      // let c =document.getElementsByClassName("compost-item");
+      // let e = document.getElementsByClassName("askcity-item");
+      // let d = document.getElementsByClassName("grocerystore-item");
 
       // console.log(f)
 
@@ -139,13 +139,9 @@ function playForCertificate(){
       // }else if(!c[0]|| !d[0]|| !e[0]){
       //   wrong.play();
       // }
-    // } else if(!d[0] || !e[0]|| !f[0]){
-    //   wrong.play();
-    // }
     } else {
-      // wrong.play();
+      wrong.play();
     }
-    
     });
 
     console.log(`this is the  ${score}`);
@@ -338,10 +334,6 @@ function reRun(){
 function reRun2(){
 
   document.getElementById('game-over').remove();
-  // document.querySelector(".grocery").removeEventListener("click", refToFunc);
-  // document.querySelector(".compost").removeEventListener("click", () => {});
-  // document.querySelector(".askcity").removeEventListener("click", () => {});
-  // document.querySelector(".local").removeEventListener("click", () => {});
   resetScore();
   playForCertificate();
 

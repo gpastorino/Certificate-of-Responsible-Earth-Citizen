@@ -13,7 +13,7 @@
 
 
 <body>
-<body1>
+
   <header>
     Certificate of Responsible Earth Citizen
   </header>
@@ -38,9 +38,10 @@
 
 
   <!-- <button>Tutorial</button> -->
+<!-- could try add a sound file to an html button -->
 
- <a href="page2.html"><button>Important resources</button></a>
- <a href="page3.html"><button>Tutorial</button></a>
+ <a href="page2.html"><button id="tutorial">Important resources</button></a>
+ <a href="page3.html"><button id="tutorial">Tutorial</button></a>
   <!-- <button class="round2">Begin  Certification</button> -->
   <!-- <button class="round2" onclick="style.display = 'none'">Begin  Certification</button> -->
   <button class="round2" id="round3" onclick="style.visibility = 'hidden'">Begin  Certification</button>
@@ -48,6 +49,9 @@
 <!-- button.style.visibility = "hidden"; -->
 
   <div class="recyclecontainers" id="2">
+
+    <div class="click-these">Click on these boxes to match item to bin</div>
+
     <div class="compost">Compost</div>
     <div class="grocery">Grocery Store</div>
     <div class="askcity">Ask City</div>
@@ -57,15 +61,33 @@
 
 
 
+  <audio id="containerclick" src="./Sounds/guitar-selector-switch_fyceKsE_.mp3" ></audio>
 
-  <script src="scripts/app.js"></script>
-</body1>
-</body>
+  <audio id="victory" src="./Sounds/crowd-scream-yes_MykaZO4O.mp3" ></audio>
+
+
+  <audio id="goagain" src="./Sounds/crowd-aww-disappointed_G1SdWOVd.mp3" ></audio>
+
+
+  <audio id="getcertificate" src="./Sounds/harp-wind-chimes-ascend-fast-delay_f1sNpuE_.mp3" ></audio>
+
+  <!-- <audio id="tutorial" src="./Sounds/ratchet-turn-clicks_M1M2DiVO.mp3></audio> -->
+
+  <!-- took this one out: tbc -->
+  <!-- <audio id="wrong" src="./Sounds/buzzer-short_Mkc50-VO.mp3" ></audio> -->
+
+
+
 
 <!-- This should contain GA name of student -->
 <footer class="bg-dark text-light text-center pt-3 pb-3">
   <p class="mb-0">© 2020 Gustav Pastorino's GA assignment for Project-Zero</p>
 </footer>
+
+
+<script src="scripts/app.js"></script>
+</body>
+
 
 
 </html>

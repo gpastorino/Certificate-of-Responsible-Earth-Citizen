@@ -54,8 +54,8 @@ function playForCertificate(){
         d[0].remove();
         addItem();
         console.log('grocery to be item removed!');
-      } else {
-        // wrong.play();
+      }else {
+        wrong.play();
       }
       console.log(`this is the  ${score}`);
     });
@@ -82,7 +82,7 @@ function playForCertificate(){
       //   wrong.play();
       // }
     } else {
-      // wrong.play();
+      wrong.play();
     }
     console.log(`this is the  ${score}`);
     });
@@ -112,7 +112,7 @@ function playForCertificate(){
       //   wrong.play();
       // }
     } else {
-      // wrong.play();
+      wrong.play();
     }
       console.log(`this is the  ${score}`);
     });
@@ -143,7 +143,7 @@ function playForCertificate(){
     //   wrong.play();
     // }
     } else {
-      // wrong.play();
+      wrong.play();
     }
     
     });
@@ -338,10 +338,6 @@ function reRun(){
 function reRun2(){
 
   document.getElementById('game-over').remove();
-  // document.querySelector(".grocery").removeEventListener("click", refToFunc);
-  // document.querySelector(".compost").removeEventListener("click", () => {});
-  // document.querySelector(".askcity").removeEventListener("click", () => {});
-  // document.querySelector(".local").removeEventListener("click", () => {});
   resetScore();
   playForCertificate();
 

@@ -38,7 +38,7 @@
   height: 385px;
   margin:  90px 0 0 60%;
   /* background-color: rgb(30, 235, 23); */
-  background-image: url('../imgs/battery3.png');
+  background-image: url('../imgs/battery-add3copy2.png');
   position: fixed;
   top: 0;
   /* z-index: -1; */
@@ -63,8 +63,11 @@
 
 html, body {
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(245, 245, 129);
-    /* background-image: url('../imgs/landscapebackground.jpg'); */
+    /* background-color: rgb(245, 245, 129); */
+
+    background-image: url('../imgs/blue-sky .jpg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%
     /* display: flex; */
     flex-direction: column;
     /* min-height: 50%; */
@@ -96,21 +99,24 @@ html, body {
   .statsbox {
     width: 20%;
     background-color: white;
-    border-radius: 10%;
+    border: 10px solid green;
+    border-radius: 3%;
     position:relative;
     /* z-index: 1; */
+
   }
 
   #score {
     font-style: bold;
+
     /* z-index: 1; */
   }
 
   .compost {
     width:  15vh;
     height: 15vh;
-    margin-right: 5%;
-    margin-left: 25%;
+    margin-right: 9%;
+    margin-left: 12%;
     display: inline-block;
     background-image: url('../imgs/compostbin2.png');
     position:relative;
@@ -121,7 +127,7 @@ html, body {
   .grocery {
     width:  15vh;
     height: 15vh;
-    margin-right: 5%;
+    margin-right: 9%;
     display: inline-block;
     background-image: url('../imgs/grocerystore.png');
     position:relative;
@@ -132,7 +138,7 @@ html, body {
   .askcity {
     width:  15vh;
     height: 15vh;
-    margin-right: 5%;
+    margin-right: 9%;
     display: inline-block;
     background-image: url('../imgs/cityhall.png');
     position:relative;
@@ -143,7 +149,7 @@ html, body {
   .local {
     width:  15vh;
     height: 15vh;
-    margin-right: 5%;
+    margin-right: 9%;
     display: inline-block;
     background-image: url('../imgs/localrecycle.png');
     position:relative;
@@ -183,21 +189,24 @@ html, body {
 
   .round2 {
     /* background-color: #4CAF50; */
-    background-image: url('../imgs/playbutton copy.png');
+    background-image: url('../imgs/playbutton2copy.png');
     border: none;
-    color: black;
-    padding: 32px 32px;
-    text-align: center;
+    /*color: black; */
+    /* padding: 32px 32px ; dont want this*/
+    /* text-align: center;*/
     text-decoration: none;
-    display: flex;
+    display: flex; 
     font-size: 16px;
-    margin: 40px 40%;
-    cursor: pointer;
+    margin: 40px 40%;  
+
     border-radius: 50%;
     height: 190px;
-    /* position: relative; */
+    width: 190px;
+    /* width: 190px;  */
     position:relative;
-    /* z-index: 1; */
+
+
+    cursor: pointer;
   }
 
   #cert {
@@ -273,4 +282,18 @@ html, body {
     /* position: fixed; */
 
 
+  }
+
+  .click-these {
+    height: 130px;
+    width: 114px;
+    background-color: white;
+    border: 10px solid white;
+    color: green;
+    border-radius: 10%;
+    position:relative;
+    background-image: url('../imgs/arrowpointing right.png')
+    
+
+    /* z-index: 1; */
   }
