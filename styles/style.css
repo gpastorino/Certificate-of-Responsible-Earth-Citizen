@@ -46,12 +46,14 @@
 
 }
 
-.items {
+.items #items {
   /* background-color: red; */
+  display: flex;
   width: 1000px;
   height: 100px;
   position: fixed;
   margin: 90px 0 0 20%;
+  flex-wrap: nowrap;
   /* z-index: -1; */
 }
 
@@ -115,6 +117,7 @@ html, body {
     display: inline-block;
     background-color: rgb(61, 128, 69);
     position:relative;
+    flex-shrink:1;
     /* z-index: 1; */
     
   }
@@ -125,6 +128,7 @@ html, body {
     display: inline-block;
     background-color: rgb(224, 109, 109);
     position:relative;
+    flex-shrink:1;
     /* z-index: 1; */
    
   }
@@ -135,6 +139,7 @@ html, body {
     display: inline-block;
     background-color: rgb(40, 220, 233);
     position:relative;
+    flex-shrink:1;
     /* z-index: 1; */
  
   }
@@ -145,6 +150,7 @@ html, body {
     display: inline-block;
     background-color: rgb(30, 235, 23);
     position:relative;
+    flex-shrink:1;
     /* z-index: 1; */
  
   }
@@ -169,6 +175,7 @@ html, body {
     
 
   .recyclecontainers {
+    display: flex;
     flex-wrap: nowrap;
     position:relative;
     /* background-color: blue; */
@@ -269,5 +276,39 @@ html, body {
     top: 200px;
     position: relative;
     z-index: 2;
+
+  }
+
+  #certificate {
+
+    width: 300px;
+    height: 500px;
+    background: gold;
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: 40%;
+  }
+
+  #try-again2 {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    left: 100px;
+    top: 200px;
+    position: relative;
+    z-index: 2;
+
+  }
+
+  #score-end {
+
+    bottom: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    z-index: 1;
+    /* position: fixed; */
+
 
   }
