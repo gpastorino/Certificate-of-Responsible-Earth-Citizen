@@ -11,6 +11,8 @@
 
 //when i hit the replay, it starts to score twice.  
 
+//score is tied to clicks, not to the actual matched scores.  
+
 let time;
 let score;
 console.log('Welcome to Earthling Resposibility Program...');
@@ -35,11 +37,15 @@ function playForCertificate(){
     addItem();
 
     document.querySelector(".grocery").addEventListener("click", ()=>{
-      score++
-      updateScore();
+      // score++
+      // updateScore();
     
       let d = document.getElementsByClassName("grocerystore-item");
       if(d[0]){
+
+        score++
+        updateScore();
+
         d[0].remove();
         addItem();
         console.log('grocery to be item removed!');
@@ -48,26 +54,32 @@ function playForCertificate(){
     });
     
     document.querySelector(".compost").addEventListener("click", ()=>{
-      score++
-      updateScore();
+      // score++
+      // updateScore();
 
       // document.getElementsByClassName("compost-item").style.margin = "`${a}px ${b}px ${c}px ${d}px`";
 
       let c = document.getElementsByClassName("compost-item");
       if(c[0]){
+        score++
+        updateScore();
+
         console.log(c);
         c[0].remove();
-        console.log('compost paired');
+        console.log('compost pared');
         addItem();
       }
     console.log(`this is the  ${score}`);
     });
 
     document.querySelector(".askcity").addEventListener("click", ()=>{
-      score++
-      updateScore();
+      // score++
+      // updateScore();
       let e = document.getElementsByClassName("askcity-item");
       if(e[0]){
+
+        score++
+        updateScore();
 
         e[0].remove();
         addItem();
@@ -77,12 +89,15 @@ function playForCertificate(){
     });
 
     document.querySelector(".local").addEventListener("click", ()=>{
-      score++
-      updateScore();
+      // score++
+      // updateScore();
       let f = document.getElementsByClassName("local-recycle-item");
-
+      // console.log(f)
 
       if(f[0]){
+        score++
+        updateScore();
+
         f[0].remove();
         addItem();
         console.log('local recycle block removed');
@@ -138,7 +153,7 @@ function addItem(){
       let askCityPix = ['../imgs/shreddedperfect.png', '../imgs/shredded-add2.png','../imgs/shredded-add3.png'];
       randomItem.style.backgroundImage = randomizePix(askCityPix);
 
-    }else{
+    }else if(randomItem === 'local') {
 
       function randomizePix(localRecyclePix) {
         var randomNum = Math.floor(Math.random() * localRecyclePix.length);
